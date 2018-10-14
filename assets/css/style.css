@@ -124,6 +124,8 @@ body {
   #main-container {
     padding-top: 130px;
     min-height: calc(100vh - 70px);
+    width: 100%;
+    max-width: 740px;
   }
   
   .main-section {
@@ -218,3 +220,18 @@ body {
     border: 0 none;
   }
   
+
+/* Small Devices*/
+@media only screen and (max-width: 640) {
+
+} 
+
+/* Medium Devices */
+@media only screen and (max-width: 768px) {
+  
+} 
+
+Large Devices
+@media only screen and (max-width: 980px) {
+  
+} 
