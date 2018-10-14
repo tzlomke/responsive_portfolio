@@ -59,7 +59,7 @@ body {
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
-    padding: 0 20px 0 0;
+    padding: 0 20px;
     overflow: auto;
     color: #ffffff;
     background: #ffffff;
@@ -132,7 +132,7 @@ body {
   .main-section {
     float: left;
     width: 100%;
-    max-width: 740px;
+    max-width: 650px;
     padding: 30px;
     margin: 0 0 40px;
     background: #ffffff;
@@ -183,6 +183,10 @@ body {
   
   /* contact page */
   
+  ul {
+    list-style: none;
+    padding: 0;
+  }
   #contact-form ul {
     margin-bottom: 20px;
   }
@@ -224,27 +228,94 @@ body {
 
 /* Small Devices*/
 @media only screen and (max-width: 640px) {
-  .masthead {
-    position: static;
-    z-index: 0;
-  }
-  
-  #header {
-    position: absolute;
-    z-index: 0;
+  html,
+  body, {
+    animation: 6s;
   }
 
-  /* .container {
+  .masthead {
     position: static;
-  } */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .container {
+    position: static;
+    width: 100%;
+  }
+
+  #header {
+    position: static;
+    width: auto;
+  }
+
+  nav {
+    position: static;
+    clear: both;
+    float: none;
+    margin: auto;
+    align-content: center;
+  }
+
+  #logo {
+    position: static;
+    width: 640px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .main-section {
+    margin: 20px 20px 20px 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .work {
+    width: 100%;
+    height: auto;
+  }
 } 
 
 /* Medium Devices */
 @media only screen and (max-width: 768px) {
+
+  html,
+  body, {
+    animation: 6s;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .masthead {
+    max-width: 768px;
+  }
   
+  .auth-image{
+    width: 50%;
+  }
+
+  .main-section{
+    width: 768px;
+  }
+
+  .work {
+    width: 50%;
+  }
 } 
 
-Large Devices
+/* Large Devices */
 @media only screen and (max-width: 980px) {
-  
+
+  html,
+  body, {
+    animation: 6s;
+  }
+
 } 
