@@ -59,6 +59,7 @@ body {
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
+    padding: 0 20px 0 0;
     overflow: auto;
     color: #ffffff;
     background: #ffffff;
@@ -125,13 +126,13 @@ body {
     padding-top: 130px;
     min-height: calc(100vh - 70px);
     width: 100%;
-    max-width: 740px;
+    max-width: 960px;
   }
   
   .main-section {
     float: left;
     width: 100%;
-    max-width: 960px;
+    max-width: 740px;
     padding: 30px;
     margin: 0 0 40px;
     background: #ffffff;
@@ -222,8 +223,20 @@ body {
   
 
 /* Small Devices*/
-@media only screen and (max-width: 640) {
+@media only screen and (max-width: 640px) {
+  .masthead {
+    position: static;
+    z-index: 0;
+  }
+  
+  #header {
+    position: absolute;
+    z-index: 0;
+  }
 
+  /* .container {
+    position: static;
+  } */
 } 
 
 /* Medium Devices */
