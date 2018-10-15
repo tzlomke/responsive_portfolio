@@ -291,6 +291,7 @@ body {
   
   .container {
     width: 100%;
+    max-width: 640px;
   }
 
   #main-container {
@@ -305,12 +306,9 @@ body {
   }
 
   nav {
-    clear: both;
     float: none;
+    width: 47%;
     margin: auto;
-    display: inline;
-    text-align: center;
-    padding-left: 168px;
   }
 
   #logo {
