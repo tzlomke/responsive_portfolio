@@ -58,7 +58,7 @@ body {
     position: fixed;
     z-index: 99;
     width: 100%;
-    margin: 0 0 30px;
+    margin: 0 0;
     padding: 0 20px;
     overflow: auto;
     color: #ffffff;
@@ -226,63 +226,18 @@ body {
   }
   
 
-/* Small Devices*/
-@media only screen and (max-width: 640px) {
+/* Large Devices */
+@media screen and (max-width: 980px) {
+
   html,
   body, {
     animation: 6s;
   }
 
-  .masthead {
-    position: static;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .container {
-    position: static;
-    width: 100%;
-  }
-
-  #header {
-    position: static;
-    width: auto;
-  }
-
-  nav {
-    position: static;
-    clear: both;
-    float: none;
-    margin: auto;
-    align-content: center;
-  }
-
-  #logo {
-    position: static;
-    width: 640px;
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .main-section {
-    margin: 20px 20px 20px 20px;
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .auth-image {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-
-  .work {
-    width: 100%;
-    height: auto;
-  }
 } 
 
 /* Medium Devices */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   html,
   body, {
@@ -301,21 +256,82 @@ body {
     width: 50%;
   }
 
-  .main-section{
-    width: 768px;
+  #main-container {
+    width: 100%;
+    max-width: 768px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .main-section {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    margin-bottom: 40px;
   }
 
   .work {
-    width: 50%;
+    width: 305px;
   }
 } 
 
-/* Large Devices */
-@media only screen and (max-width: 980px) {
-
+/* Small Devices*/
+@media screen and (max-width: 640px) {
   html,
   body, {
     animation: 6s;
   }
 
+  #masthead {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+
+  #main-container {
+    height: auto;
+    padding-top: 0;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  #header {
+    width: auto;
+  }
+
+  nav {
+    clear: both;
+    float: none;
+    margin: auto;
+    display: inline;
+    text-align: center;
+  }
+
+  #logo {
+    position: static;
+    width: 640px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .main-section {
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .work {
+    width: 100%;
+    height: auto;
+  }
 } 
