@@ -297,6 +297,7 @@ body {
   #main-container {
     height: auto;
     padding-top: 0;
+    padding-left: 0;
     width: 100%;
     max-width: 640px;
   }
